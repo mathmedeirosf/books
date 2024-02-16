@@ -1,0 +1,94 @@
+.register {
+    max-width: 90rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 15rem;
+
+    background-color: #f3f3f3;
+
+    form {
+        width: 28.6875rem;
+        padding: 1.5rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+        border: none;
+        border-radius: 1rem;
+        box-shadow: 0px 1px 20px rgb(229, 229, 229);
+
+        .title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .email {
+            margin-block: 1rem;
+
+            input {
+                padding: .5rem;
+                width: 100%;
+                font-size: 1rem;
+                margin: 0 auto;
+
+                border-radius: .5rem;
+                border: .0625rem solid gainsboro;
+                background-color: #f3f3f3;
+                box-shadow: inset -1px 4px 4px 0 rgb(229, 229, 229);
+            }
+        }
+        
+        .password {
+            margin-bottom: 3rem;
+
+            input {
+                padding: .5rem;
+                width: 100%;
+                font-size: 1rem;
+                margin: 0 auto;
+                display: flex;
+
+                border-radius: .5rem;
+                border: .0625rem solid gainsboro;
+                background-color: #f3f3f3;
+                box-shadow: inset -1px 4px 4px 0 rgb(229, 229, 229);
+            }
+        }
+
+        button {
+            background-color: #FF7A00;
+            color: #fff;
+            border: none;
+            border-radius: .5rem;
+
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            padding: .5rem;
+            width: 70%;
+            font-size: 1.3rem;
+            font-weight: bold;
+
+            &:hover {
+                background-color: #FF4D00;
+            }
+        }
+
+        .options {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-block: 2rem;
+        }
+
+        a {
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            color: #000;
+        }
+    }
+}
+
