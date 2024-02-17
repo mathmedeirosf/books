@@ -8,3 +8,14 @@ export interface User {
     email: string
     password: string
 }
+
+export interface Book {
+    id: number,
+    title: string,
+    authors: [{ name: string }]
+    formats: { 'image/jpeg': string }
+}
+
+export interface Books {
+    results: Book[]
+}

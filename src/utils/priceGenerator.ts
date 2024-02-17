@@ -1,0 +1,1 @@
+export const price = () => (((Math.random() * 50) + 30).toFixed(2)).replace('.', ',');
