@@ -1,10 +1,13 @@
 .register {
-    max-width: 90rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     width: 100%;
-    margin: 0 auto;
-    margin-top: 15rem;
 
-    background-color: #f3f3f3;
+    background: url('../../assets/background.svg') center center no-repeat;
+    background-size: cover;
+
 
     form {
         width: 28.6875rem;
@@ -13,9 +16,10 @@
         display: flex;
         flex-direction: column;
 
+        background-color: #f3f3f3;
         border: none;
         border-radius: 1rem;
-        box-shadow: 0px 1px 20px rgb(229, 229, 229);
+        box-shadow: 0px 1px 20px 10px rgb(211, 211, 211);
 
         .title {
             text-align: center;

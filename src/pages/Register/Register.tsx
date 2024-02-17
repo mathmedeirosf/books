@@ -38,26 +38,26 @@ export default function Register() {
             <form onSubmit={handleSubmit}>
                 <h1 className="title">Cadastro</h1>
                 <div className="email">
-                    <input 
+                    <input
                         type="email"
-                        id="email" 
+                        id="email"
                         placeholder="Digite seu e-mail: "
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         required
-                        />
+                    />
                 </div>
                 <div className="password">
-                    <input 
-                        type="password" 
+                    <input
+                        type="password"
                         placeholder="Digite sua senha: "
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                        required 
-                        />
+                        required
+                    />
                 </div>
                 <button type="submit" disabled={isLoading} >
-                    <Link to={'/'}>{isLoading ? 'Cadastrando...' : 'Cadastrar'}</Link>
+                    {isLoading ? 'Cadastrando...' : 'Cadastrar'}
                 </button>
                 <div className="options">
                     <span>_________</span>
