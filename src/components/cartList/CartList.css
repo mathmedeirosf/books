@@ -1,0 +1,78 @@
+div.order {
+    border-radius: 0 0 .5rem .5rem;
+    box-shadow: 1px 10px 20px #e6e6e6;
+    width: 80rem;
+    margin-bottom: 2rem;
+    
+    .order-list {
+        padding: 0;
+
+        .infos {
+            background-color: #FF4D00;
+            color: #fff;
+            padding: .5rem;
+            border-radius: .5rem .5rem 0 0;
+            list-style: none;
+            display: flex;
+
+            #item{
+                min-width: 38%;
+            }
+
+            #quantity{
+                min-width: 25%;
+            }
+        }
+
+        .list {
+            border-radius: .5rem .5rem 0 0;
+            display: flex;
+            justify-content: space-between;
+            padding: .5rem;
+
+
+            h2 {
+                margin-top: 10px;
+                font-size: .875rem;
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+                min-width: 30%;
+
+                img {
+                    width: 3.125rem;
+                    height: 3.125rem;
+                    margin: .5rem;
+                }
+            }
+
+            div.quantity {
+                display: flex;
+                align-items: center;
+                min-width: 20%;
+
+                button.control {
+                    border: none;
+                    width: 1rem;
+                    border-radius: 50%;
+                    margin-inline: 1rem;
+                    background-color: #e6e6e6;
+                    font-weight: bold;
+                }
+            }
+
+            div.price {
+                display: flex;
+                align-items: center;
+                min-width: 20%;
+            }
+
+            button.Btn-delete {
+                border: none;
+                font-weight: bold;
+                color: #ff0000;
+                min-width: 10%;
+            }
+        }
+    }
+}
