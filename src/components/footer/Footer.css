@@ -1,0 +1,14 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+
+    height: 4rem;
+    background-color: #FF4D00;
+
+    span {
+        font-size: 1.25rem;
+        color: #fff;
+    }
+}
