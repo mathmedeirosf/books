@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Book from '../../components/book/Book';
 import Footer from '../../components/footer/Footer';
 import Header from '../../components/header/Header';
@@ -9,8 +9,24 @@ import arrowRight from '../../assets/arrow-right.svg';
 import book from '../../assets/book.svg';
 import './Home.css';
 
+import { useAppDispatch, useAppSelector } from '../../hooks/redux';
+import { getBooks } from '../../store/slices/bookSlice';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../store/store';
+
 export default function Home() {
-    const { data: books } = useGetBooksQuery();
+    const books = useAppSelector(state => state.book.books);
+    const dispatch = useAppDispatch();
+    const { data, isSuccess } = useGetBooksQuery();
+
+    const fetchBooks = () => {
+        if (data) dispatch(getBooks(data.results));
+    };
+
+    useEffect(() => {
+        if (data) fetchBooks();
+
+    }, [data, dispatch]);
 
     const handleScrollLeft = () => {
         const div = document.getElementById('books');
@@ -27,12 +43,13 @@ export default function Home() {
         <>
             <Header />
             <main className='home'>
-                {books && <>
+                {isSuccess && <>
                     <h2> <img src={book} alt='Ícone de livro' />Livros Populares</h2>
                     <div className="books-container">
                         <div className="books" id='books'>
-                            {books.results.map(book => (
+                            {books.map(book => (
                                 <Book
+                                    key={book.id}
                                     id={book.id}
                                     title={book.title}
                                     author={book.authors[0].name}
@@ -40,7 +57,6 @@ export default function Home() {
                                     image={book.formats['image/jpeg']}
                                 />
                             ))}
-
                         </div>
                         <img id='left' src={arrowLeft} onClick={() => handleScrollLeft()} />
                         <img id='right' src={arrowRight} onClick={() => handleScrollRight()} />
