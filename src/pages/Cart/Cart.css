@@ -1,50 +1,103 @@
 main.cart {
     padding: 2rem;
 
-    div.infos {
-        margin-block: 2rem;
-        width: 60%;
-        border-radius: .5rem .5rem 0 0;
+    div.books-cart {
+        display: flex;
+        justify-content: space-between;
 
-        background-color: #FF4D00;
-        color: #fff;
+        div.infos {
+            margin-top: 2rem;
+            width: 60rem;
+            border-radius: .5rem .5rem 0 0;
 
-        ul {
-            padding: .5rem;
-            display: flex;
-            justify-content: space-between;
+            background-color: #FF4D00;
+            color: #fff;
 
-            li {
-                list-style: none;
-            }
-        }
-    }
-
-    div.order {
-        margin-block: 2rem;
-        width: 60%;
-        border-radius: .5rem .5rem 0 0;
-
-        .order-list {
-
-            .list {
+            ul {
+                padding: .5rem;
                 display: flex;
                 justify-content: space-between;
 
-                h2 {
-                    margin-top: 10px;
-                    font-size: .875rem;
-                    font-weight: 400;
-                    display: flex;
-                    align-items: center;
-                    flex-wrap: wrap;
+                li {
+                    list-style: none;
 
-                    img {
-                        width: 50px;
-                        height: 50px;
+                    span.quantity-item{
+                        margin-left: 2rem;
                     }
                 }
             }
+        }
+
+        div.order {
+            
+            border-radius: 0 0 .5rem .5rem;
+            box-shadow: 1px 10px 20px #e6e6e6;
+
+            .order-list {
+                padding: 0;
+
+                .list {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px;
+                    border-bottom: 1px solid #ccc;
+
+                    h2 {
+                        margin-top: 10px;
+                        font-size: .875rem;
+                        font-weight: 400;
+                        display: flex;
+                        align-items: center;
+                        max-width: 8rem;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+
+                        img {
+                            width: 50px;
+                            height: 50px;
+                            margin: .5rem;
+                        }
+                    }
+
+                    div.quantity {
+                        display: flex;
+                        align-items: center;
+
+                        button.control {
+                            border: none;
+                            width: 1rem;
+                            border-radius: 50%;
+                            margin-inline: 1rem;
+                            background-color: #e6e6e6;
+                            font-weight: bold;
+                        }
+                    }
+
+                    div.price {
+                        display: flex;
+                        align-items: center;
+                        
+                    }
+
+                    button.Btn-delete {
+                        border: none;
+                        margin-right: 2rem;
+                        font-weight: bold;
+                        color: #ff0000;
+                    }
+                }
+            }
+        }
+
+        div.summary {
+            margin-top: 2rem;
+            width: 20rem;
+            border-radius: .5rem .5rem 0 0;
+
+            background-color: #FF4D00;
+            color: #fff;
         }
     }
 }
