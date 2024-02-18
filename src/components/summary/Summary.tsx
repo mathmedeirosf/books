@@ -57,9 +57,11 @@ export default function Summary () {
                     <strong>{calculateTotal()}</strong>
                 </li>
             </ul>
-            <Link to={'/confirmation'}>
-                <button type='submit' className='confirm' onClick={handleConfirmPurchase}>Confirmar compra</button>
-            </Link>
+                {cartItems.length == 0 ? ''
+                    : 
+                    <Link to={'/confirmation'}>
+                        <button type='submit' className='confirm' onClick={handleConfirmPurchase}>Confirmar compra</button>
+                    </Link>}
         </div>  
     )
 }
