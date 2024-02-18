@@ -11,13 +11,6 @@ export interface BookProps {
     price: string
 }
 
-interface CartItem {
-    id: number
-    title: string
-    image: string
-    price: string
-}
-
 export default function Book({ id, title, author, price, image }: BookProps) {
     const dispatch = useDispatch();
 
