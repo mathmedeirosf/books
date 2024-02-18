@@ -1,0 +1,63 @@
+div.book {
+    height: 28.4rem;
+    padding: 1rem;
+
+    border-radius: 15px;
+    box-shadow: 0 3px 6px 2px #a9a9a9;
+
+    img {
+        width: 13.5rem;
+        height: 18rem;
+        object-fit: cover;
+
+        border: 2px solid #ececec;
+        border-radius: 5px;
+    }
+
+    div.infos {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        height: 8rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+        max-width: 13.5rem;
+
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    h4 {
+        font-size: 1rem;
+        max-width: 13.5rem;
+
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    span {
+        font-size: 1.7rem;
+    }
+
+    button {
+        font-weight: 600;
+        color: #FF7A00;
+
+        padding: 0.5rem 1rem;
+
+        border: 1px solid #FF7A00;
+        border-radius: 30px;
+        box-shadow: 0 3px 6px 0 #9c9c9c;
+
+        &:hover {
+            background-color: #FF7A00;
+            color: #fff;
+            border-color: #fff;
+        }
+    }
+}
