@@ -26,6 +26,20 @@
             margin-bottom: 3rem;
         }
 
+        .username {
+            input {
+                padding: .5rem;
+                width: 100%;
+                font-size: 1rem;
+                margin: 0 auto;
+
+                border-radius: .5rem;
+                border: .0625rem solid gainsboro;
+                background-color: #f3f3f3;
+                box-shadow: inset -1px 4px 4px 0 rgb(229, 229, 229);
+            }
+        }
+
         .email {
             margin-block: 1rem;
 
