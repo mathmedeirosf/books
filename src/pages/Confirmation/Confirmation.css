@@ -1,0 +1,28 @@
+main.confirmation {
+    padding: 2rem;
+    max-width: 103.125rem;
+    min-height: 86vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        align-items: center;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    p {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    button {
+        border: none;
+        font-weight: bold;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 5rem;
+    }
+}
