@@ -37,6 +37,14 @@ export default function Register() {
         <main className='register'>
             <form onSubmit={handleSubmit}>
                 <h1 className="title">Cadastro</h1>
+                <div className="username">
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="Digite seu usuário: "
+                        required
+                    />
+                </div>
                 <div className="email">
                     <input
                         type="email"

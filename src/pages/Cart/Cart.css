@@ -1,0 +1,13 @@
+main.cart {
+    padding: 2rem;
+    max-width: 103.125rem;
+    min-height: 86vh;
+    margin: 0 auto;
+
+    div.books-cart {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+        flex-wrap: wrap;
+    }
+}

@@ -4,6 +4,7 @@ import Register from './pages/Register/Register';
 import Home from './pages/Home/Home';
 import Cart from './pages/Cart/Cart';
 import Error from './pages/Error/Error';
+import Confirmation from './pages/Confirmation/Confirmation';
 
 export default function Router() {
     return (
@@ -14,6 +15,7 @@ export default function Router() {
                 <Route path='/home' element={<Home />} />
                 <Route path='/cart' element={<Cart />} />
                 <Route path='/*' element={<Error />} />
+                <Route path='/confirmation' element={<Confirmation />} />
             </Routes>
         </BrowserRouter>
     );
