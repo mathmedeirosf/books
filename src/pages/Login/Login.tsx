@@ -1,8 +1,8 @@
-import { useState } from "react";
-import { useLoginMutation } from "../../services/user";
+import { useState } from 'react';
+import { useLoginMutation } from '../../services/user';
 
 import './Login.css'
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
     const navigate = useNavigate()
@@ -35,38 +35,40 @@ export default function Login() {
 
     return (
         <main className='login'>
+            <div className='decoration-top'></div>
             <form onSubmit={handleSubmit}>
-                <h1 className="title">Login</h1>
-                {error && <p className="error-message">{error}</p>}
-                <div className="email">
-                    <input 
-                        type="email"
-                        id="email" 
-                        placeholder="Digite seu e-mail: "
+                <h1 className='title'>Login</h1>
+                {error && <p className='error-message'>{error}</p>}
+                <div className='email'>
+                    <input
+                        type='email'
+                        id='email'
+                        placeholder='Digite seu e-mail: '
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         required
-                        />
+                    />
                 </div>
-                <div className="password">
-                    <input 
-                        type="password" 
-                        placeholder="Digite sua senha: "
+                <div className='password'>
+                    <input
+                        type='password'
+                        placeholder='Digite sua senha: '
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                        required 
-                        />
+                        required
+                    />
                 </div>
-                <button type="submit" disabled={isLoading}>
+                <button type='submit' disabled={isLoading}>
                     {isLoading ? 'Acessando...' : 'Acessar'}
                 </button>
-                <div className="options">
+                <div className='options'>
                     <span>_________</span>
                     <p>ou</p>
                     <span>_________</span>
                 </div>
-                <a href="/register">Cadastre-se</a>
+                <a href='/register'>Cadastre-se</a>
             </form>
+            <div className='decoration-bottom'></div>
         </main>
     );
 }

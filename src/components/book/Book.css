@@ -1,5 +1,6 @@
 div.book {
     height: 28.4rem;
+    width: fit-content;
     padding: 1rem;
 
     border-radius: 15px;
