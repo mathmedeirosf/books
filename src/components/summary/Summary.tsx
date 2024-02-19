@@ -1,8 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { clearCart } from '../../store/slices/CartSlice';
+import { clearCart } from '../../store/slices/cartSlice';
 import { RootState } from '../../store/store';
 import { Link } from 'react-router-dom';
-
 import './Summary.css'
 
 export default function Summary () {
@@ -11,7 +10,7 @@ export default function Summary () {
 
     const calculateSubtotal = () => {
         return cartItems.reduce((subtotal, item) => {
-            const priceWithoutCurrency = item.price.replace("R$ ", "").replace(",", ".");
+            const priceWithoutCurrency = item.price.replace('R$ ', '').replace(',', '.');
             const price = parseFloat(priceWithoutCurrency) || 0;
             const quantity = item.quantity || 0;
             return subtotal + (price * quantity);

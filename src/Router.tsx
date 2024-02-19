@@ -5,6 +5,8 @@ import Home from './pages/Home/Home';
 import Cart from './pages/Cart/Cart';
 import Error from './pages/Error/Error';
 import Confirmation from './pages/Confirmation/Confirmation';
+import { Library } from './pages/Library/Library';
+import PrivateRoute from './layouts/PrivateRoute';
 
 export default function Router() {
     return (
@@ -12,10 +14,15 @@ export default function Router() {
             <Routes>
                 <Route path='/' element={<Login />} />
                 <Route path='/register' element={<Register />} />
-                <Route path='/home' element={<Home />} />
-                <Route path='/cart' element={<Cart />} />
+
+                <Route element={<PrivateRoute />}>
+                    <Route path='/home' element={<Home />} />
+                    <Route path='/library' element={<Library />} />
+                    <Route path='/cart' element={<Cart />} />
+                    <Route path='/confirmation' element={<Confirmation />} />
+                </Route>
+                
                 <Route path='/*' element={<Error />} />
-                <Route path='/confirmation' element={<Confirmation />} />
             </Routes>
         </BrowserRouter>
     );
