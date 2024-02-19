@@ -1,8 +1,8 @@
 # Book's
 
-<p align="center">
-  <img src="./src/assets/Group 68.png" alt="Books Logo" />
-</p>
+<div align="center">
+  <img src="./src/assets/Group 68.png" alt="Books Logo" style="width:100%" />
+</div>
 
 ## Descrição
 
