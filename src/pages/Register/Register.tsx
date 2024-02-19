@@ -35,6 +35,7 @@ export default function Register() {
 
     return (
         <main className='register'>
+             <div className='decoration-top'></div>
             <form onSubmit={handleSubmit}>
                 <h1 className="title">Cadastro</h1>
                 <div className="username">
@@ -72,8 +73,9 @@ export default function Register() {
                     <p>ou</p>
                     <span>_________</span>
                 </div>
-                <a href="/">logue-se</a>
+                <a href="/">Logue-se</a>
             </form>
+            <div className='decoration-bottom'></div>
         </main>
     );
 }

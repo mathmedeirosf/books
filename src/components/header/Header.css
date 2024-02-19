@@ -1,14 +1,16 @@
 header {
-    background-color: #FF4D00;
-    box-shadow: 0 2px 15px 1px #a4a4a4;
+    .wrapper {
+        background-color: #FF4D00;
+        box-shadow: 0 0 10px 1px #767676;
+    }
 
-    .container {
+    .container-top {
         display: flex;
         align-items: center;
         justify-content: space-between;
 
         width: 100%;
-        max-width: 1500px;
+        max-width: 1650px;
         margin: 0 auto;
         padding: 0.8rem 2rem;
     }
@@ -54,7 +56,7 @@ header {
 
             .cart-items {
                 position: absolute;
-                right: -0.5rem;
+                right: -0.4rem;
                 top: -2rem;
                 z-index: 1;
 
@@ -62,15 +64,15 @@ header {
                 align-items: center;
                 justify-content: center;
 
-                height: 1.5rem;
-                width: 1.5rem;
+                height: 1.3rem;
+                width: 1.3rem;
 
                 background-color: #a40000;
                 border-radius: 50%;
             }
 
             span {
-                font-size: 1rem;
+                font-size: 0.9rem;
                 font-weight: 600;
             }
 
@@ -79,6 +81,39 @@ header {
                 filter: brightness(100);
             }
         }
+    }
 
+    .container-bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 2.65rem;
+
+        box-shadow: 0 2px 15px 1px #a4a4a4;
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 2.4rem;
+            width: 12rem;
+
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #000;
+            border-radius: 30px;
+        }
+
+        a.active {
+            background-color: #000;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        a.disabled {
+            cursor: not-allowed;
+        }
     }
 }

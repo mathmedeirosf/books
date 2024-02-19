@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { updateCartItemQuantity, removeCartItem } from '../../store/slices/CartSlice';
+import { updateCartItemQuantity, removeCartItem } from '../../store/slices/cartSlice';
 import { RootState } from '../../store/store';
 
 import './CartList.css'
@@ -17,10 +17,10 @@ export default function CartList() {
     };
 
     return (
-        <div className="order">
+        <div className='order'>
             <ul className='order-list'>
-                <li className="infos">
-                    <span id="item">Item</span>
+                <li className='infos'>
+                    <span id='item'>Item</span>
                     <span id='quantity'>Quantidade</span>
                     <span id='subtotal'>Subtotal</span>
                     <span></span>

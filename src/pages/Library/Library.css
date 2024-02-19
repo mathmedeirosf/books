@@ -1,0 +1,34 @@
+main.library {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 85vh;
+
+    background: url('../../assets/background.svg') center center no-repeat;
+    background-size: cover;
+
+    padding: 5rem 10rem;
+
+    div.books {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(13.5rem, 1fr));
+        place-items: center;
+        gap: 1rem;
+
+        gap: 2.5rem 3rem;
+
+        width: auto;
+        max-width: 1550px;
+        max-height: 90vh;
+        padding: 0.5rem 3rem 2rem 3rem;
+
+        overflow-y: auto;
+        border-inline: 3px solid #e2e2e2;
+        border-bottom: 3px solid #e2e2e2;
+
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+    }
+}

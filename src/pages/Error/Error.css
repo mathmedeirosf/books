@@ -1,0 +1,33 @@
+main.error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    min-height: 80.5vh;
+    width: 100%;
+
+
+    img {
+        width: 16rem;
+    }
+
+    div.text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        color: #FF4D00;
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: 1.7rem;
+            font-weight: 600;
+        }
+
+    }
+}
