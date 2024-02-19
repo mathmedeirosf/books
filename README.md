@@ -1,5 +1,9 @@
 # Book's
 
+<p align="center">
+  <img src="./src/assets/Group 68.png" alt="Books Logo" />
+</p>
+
 ## Descrição
 
 <strong>Book's</strong> é uma aplicação React com RTK Query que apresenta uma lista de livros, permitindo aos usuários visualizá-los, filtrá-los por nome e adicionar livros ao carrinho de compras<br />
